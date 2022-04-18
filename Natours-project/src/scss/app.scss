@@ -1,3 +1,2 @@
-@import "./modules/components/variables";
-@import "./modules/components/reset";
-@import "./modules/layout/styles";
+@use "./modules/components";
+@use "./modules/layout";
