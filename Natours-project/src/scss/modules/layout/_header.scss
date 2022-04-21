@@ -1,4 +1,4 @@
-@use "../components" as c;
+@use "../components"as c;
 // COLORS
 
 // $l-green: #7ed56f;
@@ -7,42 +7,43 @@
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(c.$l-green, 0.8),
-      rgba(c.$d-green, 0.8)
-    ),
+      rgba(c.$d-green, 0.8)),
     url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
-  .logo-nav-box {
+  .header__logo-box {
     display: flex;
 
     padding: 3rem;
-    .logo {
+
+    .header__logo {
       width: 7rem;
     }
   }
 }
-.heading-primary {
+
+.header__text-box {
   color: c.$white;
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 
-  .heading-primary-main {
+  .heading-primary--main {
     display: block;
     font-size: 6rem;
     letter-spacing: 3.5rem;
     animation: moveInLeft 0.5s ease-out;
   }
-  .heading-primary-sub {
+
+  .heading-primary--sub {
     display: block;
     font-size: 2rem;
     letter-spacing: 1.74rem;

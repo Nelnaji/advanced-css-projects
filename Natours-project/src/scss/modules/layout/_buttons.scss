@@ -1,4 +1,4 @@
-@use "../components" as c;
+@use "../components"as c;
 
 .btn:link,
 .btn:visited {
@@ -12,13 +12,14 @@
     transform: translateY(-3px);
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
   }
+
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
   }
 }
 
-.btn-white {
+.btn--white {
   background-color: c.$white;
   color: c.$text-grey;
   font-size: 1.6rem;
@@ -41,7 +42,7 @@
   }
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: c.$white;
 }
 
@@ -50,7 +51,7 @@
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.5s;
   animation-fill-mode: backwards;
 }
